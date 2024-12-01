@@ -1,6 +1,6 @@
 locals {
   tags = {
     Environment = "development"
-    Project     = "devops-golden"
+    Project     = "${var.project_name}"
   }
 }
