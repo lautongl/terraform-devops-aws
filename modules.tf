@@ -4,3 +4,10 @@ module "eks_network" {
   project_name = var.project_name
   tags         = local.tags #Isso aqui pega as tags do locals.tf e posteriormente tambem sera utilizando pelo variables do modulo network ou outros
 }
+
+module "eks_cluster" {
+  source       = "./modules/cluster"
+  project_name = var.project_name
+  cidr_block   = var.cidr_block
+  tags         = local.tags
+}
