@@ -32,6 +32,8 @@ No resources.
 |------|-------------|------|---------|:--------:|
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | cidr vpc | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | project name | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | aws region to create the resources | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | tags to add on aws resources | `map(any)` | n/a | yes |
 
 ## Outputs
 
